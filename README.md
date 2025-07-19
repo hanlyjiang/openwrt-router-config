@@ -123,12 +123,13 @@ mtd -r -e kernel2 write /tmp/flat.img kernel2
 erase nvram;
 
 # DDWRT 执行：
-mtd -e linux -r write /tmp/flat.img linux
+mtd -e linux2 -r write /tmp/flat.img linux2
 
 # OPENWRT 执行：
 mtd -r -e kernel1 write /tmp/flat.img kernel1
 ```
 
+刷写完成后会自动启动到对应分区
 
 
 ## 参考资料：
